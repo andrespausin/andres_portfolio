@@ -7,6 +7,8 @@ export default function Home() {
     <div className="">
       <Header />
       <Hero />
+      <Hero />
+      <Hero />
     </div>
   );
 }

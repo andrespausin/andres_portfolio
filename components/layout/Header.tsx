@@ -6,22 +6,17 @@ const Header = () => {
   return (
     <nav className="bg-black">
       <div className="mx-auto px-4 lg:px-8">
-        <div className="mx-80 flex justify-between items-center text-center py-4">
+        <div className="max-w-7xl mx-auto flex justify-center lg:justify-between items-center py-6">
 
-          {/* NOMBRE Y PORTAFOLIO */}
           <Link href="/">
             <div className="flex flex-col items-center">
-              <div className="font-bold text-xl font-syne text-white mb-1">
-                CÉSAR PAUSIN
-              </div>
-              <div className="font-light text-[14px] font-roboto-sans text-white leading-tight translate-y-1px">
-                Fullstack Engineer
+              <div className="font-bold text-xl font-syne text-gray-300 mb-1">
+                PORTAFOLIO
               </div>
             </div>
           </Link>
 
-          {/* MENU DESKTOP: Se oculta en movil y aparece en md */}
-          <div className="hidden sm:flex space-x-8 font-space-grotesk text-white">
+          <div className="hidden lg:flex space-x-8 font-space-grotesk text-white">
             <NavItem>
               <Link href={'/about'}>Sobre mi</Link>
             </NavItem>
