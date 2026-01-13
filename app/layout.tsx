@@ -32,7 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${instrumentSerif.variable} ${syne.variable} ${spaceGrotesk.variable} ${robotoSans.variable}`}>
-      <body className="bg-gray-900 text-white min-h-screen flex flex-col antialiased">
+      <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+      </head>
+      <body className="bg-black text-white min-h-screen flex flex-col antialiased">
         {children}
       </body>
     </html>
