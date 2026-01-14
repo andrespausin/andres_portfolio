@@ -1,10 +1,10 @@
 import Link from "next/link"
-import NavItem from "../ui/NavItem"
+import NavItem from "@/components/ui/NavItem"
 
-const Header = () => {
+const Navbar = () => {
 
   return (
-    <nav className="bg-black">
+    <nav className="top-0 z-50 bg-transparent">
       <div className="mx-auto px-4 lg:px-8">
         <div className="max-w-7xl mx-auto flex justify-center lg:justify-between items-center py-6">
 
@@ -35,4 +35,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Navbar
