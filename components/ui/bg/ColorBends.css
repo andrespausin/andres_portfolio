@@ -1,0 +1,17 @@
+/* .color-bends-container {
+  position: relative;
+  width: 120v;
+  height: 100%;
+  overflow: hidden;
+} */
+
+.color-bends-container {
+  width: 120vw !important;
+  /* 120% viewport width */
+  height: 120vh !important;
+  /* 120% viewport height */
+  left: -10vw !important;
+  /* Center it */
+  top: -10vh !important;
+  position: absolute;
+}
