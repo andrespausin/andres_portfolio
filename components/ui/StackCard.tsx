@@ -32,12 +32,12 @@ const StackCard = ({ stack }: StackCardProps) => {
       tabIndex={0}
     >
       <CardHeader className="pb-3 space-y-1">
-        <CardTitle className="text-base font-semibold tracking-tight font-space-grotesk">
+        <CardTitle className="text-base font-semibold tracking-tight font-roboto-sans">
           {stack.categoria}
         </CardTitle>
 
         {stack.descripcion && (
-          <CardDescription className="text-xs text-neutral-400 leading-relaxed">
+          <CardDescription className="text-xs text-neutral-400 leading-relaxed font-space-grotesk -mt-4">
             {stack.descripcion}
           </CardDescription>
         )}
@@ -62,8 +62,8 @@ const StackCard = ({ stack }: StackCardProps) => {
                       rounded-xl bg-neutral-900/80
                       text-3xl text-neutral-300
                       border border-neutral-800
-                      hover: transition-colors duration-150
-                      group-hover:border-amber-400/60
+                      group-hover: transition-colors duration-150
+                      hover:border-amber-400/60
                       hover:text-amber-300
                     "
                     title={habilidad.name}
@@ -86,7 +86,7 @@ const StackCard = ({ stack }: StackCardProps) => {
                   bg-neutral-900/70 px-3 py-1
                   text-xs text-neutral-300
                   transition-colors duration-150
-                  group-hover:border-amber-400/60
+                  hover:border-amber-400/60
                 "
               >
                 <span className="h-1.5 w-1.5 rounded-full bg-amber-400/80" />
