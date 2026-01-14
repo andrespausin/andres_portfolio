@@ -1,4 +1,4 @@
-import { Roboto, Instrument_Serif, Syne, Space_Grotesk } from "next/font/google";
+import { Roboto, Instrument_Serif, Syne, Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 
 const robotoSans = Roboto({
@@ -25,17 +25,23 @@ const spaceGrotesk = Space_Grotesk({
   weight: "400"
 })
 
+const inter = Inter({
+  variable: "--font-space-grotesk",
+  subsets: ["latin"],
+  weight: "400"
+})
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${instrumentSerif.variable} ${syne.variable} ${spaceGrotesk.variable} ${robotoSans.variable}`}>
+    <html lang="en" className={`${instrumentSerif.variable} ${syne.variable} ${spaceGrotesk.variable} ${robotoSans.variable} ${inter.variable}`}>
       <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
       </head>
-      <body className="bg-black text-white min-h-screen flex flex-col antialiased">
+      <body className="bg-[#0A0A0A] min-h-screen flex flex-col">
         {children}
       </body>
     </html>
