@@ -6,6 +6,7 @@ import {
   CardDescription,
 } from "@/components/ui/card"
 import { Stack } from "@/lib/skills"
+import clsx from "clsx"
 
 interface StackCardProps {
   stack: Stack
@@ -14,63 +15,93 @@ interface StackCardProps {
 const StackCard = ({ stack }: StackCardProps) => {
   const hasIcons = stack.habilidades.some(h => typeof h === "object")
 
+  const colSpanClass = {
+    1: "col-span-1",
+    2: "col-span-2",
+    3: "col-span-3",
+  }[stack.colSpan ?? 1]
+
+  const rowSpanClass = {
+    1: "row-span-1",
+    2: "row-span-2",
+    3: "row-span-3",
+  }[stack.rowSpan ?? 1]
+
   return (
     <Card
-      className={`
-        group
-        h-full
-        border border-neutral-800/40
-        bg-neutral-950
-        text-neutral-100
-        rounded-2xl
-        xl:mt-4
-        shadow-[0_0_0_1px_rgba(255,255,255,0.02)]
-        transition-all duration-200 ease-out
-        hover:-translate-y-1 hover:shadow-xl hover:shadow-amber-400/20
-        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400
-      `}
+      className={clsx(
+        "group relative rounded-2xl border border-neutral-800/50 bg-neutral-950/60 text-neutral-100 p-4",
+        "transition-all duration-300 ease-out hover:-translate-y-2 hover:border-green-400/40 hover:bg-neutral-900/70",
+        "flex flex-col",
+        colSpanClass,
+        rowSpanClass
+      )}
       tabIndex={0}
     >
-      <CardHeader className="pb-3 space-y-1">
-        <CardTitle className="text-base font-semibold tracking-tight font-roboto-sans">
+      <CardHeader className="p-0 mb-4 space-y-1">
+        <CardTitle
+          className="
+            text-sm font-semibold tracking-wide
+            font-space-grotesk
+            flex items-center gap-2
+          "
+        >
+          <span className="h-1.5 w-1.5 rounded-full bg-green-400/80" />
           {stack.categoria}
         </CardTitle>
 
         {stack.descripcion && (
-          <CardDescription className="text-xs text-neutral-400 leading-relaxed font-space-grotesk -mt-4">
+          <CardDescription
+            className="
+              text-xs text-neutral-400
+              leading-snug font-space-grotesk
+            "
+          >
             {stack.descripcion}
           </CardDescription>
         )}
       </CardHeader>
 
-      <CardContent>
+      <CardContent className="p-0 flex-1">
         <ul
-          className={
+          className={clsx(
             hasIcons
-              ? "grid grid-cols-3 gap-4 pt-1"
-              : "flex flex-wrap gap-2 pt-1"
-          }
-          aria-label={stack.categoria}
+              ? stack.colSpan === 2 || stack.colSpan === 3
+                ? "grid grid-cols-4 gap-6"
+                : "grid grid-cols-2 gap-6"
+              : "flex flex-col md:grid md:grid-cols-3 gap-4"
+
+          )}
         >
           {stack.habilidades.map((habilidad) => {
             if (typeof habilidad === "object") {
               return (
-                <li key={habilidad.name} className="flex flex-col items-center">
+                <li
+                  key={habilidad.name}
+                  className="flex flex-col items-center gap-2"
+                >
                   <div
                     className="
-                      flex h-12 w-12 items-center justify-center
-                      rounded-xl bg-neutral-900/80
+                      flex h-13 w-13 items-center justify-center
+                      rounded-xl border border-neutral-800
                       text-3xl text-neutral-300
-                      border border-neutral-800
-                      group-hover: transition-colors duration-150
-                      hover:border-amber-400/60
-                      hover:text-amber-300
+                      transition-all duration-200
+                      bg-neutral-800/80
+                      hover:text-green-400 hover:border-green-400
+                      group-hover:border-green-400/30 group-hover:text-green-300
+                      hover:scale-105 animate-fade-in animate-delay-[100ms]
                     "
                     title={habilidad.name}
                   >
                     <i className={habilidad.icon} aria-hidden="true" />
                   </div>
-                  <span className="mt-2 text-[11px] text-neutral-400 text-center line-clamp-1">
+
+                  <span
+                    className="
+                      text-[11px] text-neutral-400 text-center
+                      leading-tight line-clamp-1
+                    "
+                  >
                     {habilidad.name}
                   </span>
                 </li>
@@ -81,15 +112,15 @@ const StackCard = ({ stack }: StackCardProps) => {
               <li
                 key={habilidad}
                 className="
+                  rounded-2xl
                   inline-flex items-center gap-2
-                  rounded-full border border-neutral-800
-                  bg-neutral-900/70 px-3 py-1
-                  text-xs text-neutral-300
-                  transition-colors duration-150
-                  hover:border-amber-400/60
+                  md:rounded-full border border-neutral-800 bg-neutral-900/60
+                  px-3 py-1 text-xs text-neutral-300
+                  transition-all duration-150
+                  hover:border-green-400/50
                 "
               >
-                <span className="h-1.5 w-1.5 rounded-full bg-amber-400/80" />
+                <span className="h-1.5 w-1.5 rounded-full bg-green-400/70" />
                 {habilidad}
               </li>
             )
