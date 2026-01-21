@@ -1,11 +1,11 @@
 "use client"
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import SectionContainer from "../ui/SectionContainer";
-import Heading from "../ui/Heading";
+import SectionContainer from "../ui/personalized/SectionContainer";
+import Heading from "../ui/personalized/Heading";
 import Image from "next/image";
-import Subheading from "../ui/Subheading";
-import NavItem from "../ui/NavItem";
+import Subheading from "../ui/personalized/Subheading";
+import NavItem from "../ui/personalized/NavItem";
 import Link from "next/link";
 
 const Hero = () => {
@@ -28,9 +28,9 @@ const Hero = () => {
               className="flex flex-col text-white text-center items-center pt-40 mx-auto lg:items-start lg:text-start lg:justify-start lg:pt-0 lg:mx-0 "
               style={{ opacity: textAOpacity }}
             >
-              <Heading content="CÉSAR PAUSIN" className="whitespace-nowrap text-[clamp(5rem,20vw,6rem)] md:text-[clamp(5rem,20vw,6rem)] lg:text-[clamp(5rem,14vw,6rem)] xl:text-[clamp(6rem,14vw,7rem)]" />
-              <Subheading content="FULLSTACK ENGINEER" className="whitespace-nowrap" />
-              <p className="font-space-grotesk text-[clamp(0.5rem,10vw,1.5rem)] mt-4 md:text-[clamp(0.5rem,6vw,1.75rem)] lg:text-[clamp(0.5rem,6vw,1.55rem)] xl:text-[clamp(0.5rem,6vw,2.2rem)] font-extrabold text-white tracking-tighter xl:whitespace-nowrap">
+              <Heading content="CÉSAR PAUSIN" className="whitespace-nowrap text-[clamp(5rem,20vw,6rem)] md:text-[clamp(5rem,20vw,6rem)] lg:text-[clamp(5rem,14vw,8rem)] xl:text-[clamp(6rem,14vw,7rem)]" />
+              <Subheading content="FULLSTACK ENGINEER" className="whitespace-nowrap text-[clamp(1.5rem,12vw,3rem)] md:text-[clamp(4rem,8vw,5rem)] lg:text-[clamp(2rem,14vw, 5rem)] xl:text-[clamp(3.1rem,14vw,4.3rem)] " />
+              <p className="font-space-grotesk text-[clamp(0.5rem,10vw,1.5rem)] mt-4 md:text-[clamp(0.5rem,6vw,1.75rem)] lg:text-[clamp(1.7rem,6vw,2.53rem)] xl:text-[clamp(0.5rem,6vw,2.2rem)] font-extrabold text-white tracking-tighter xl:whitespace-nowrap">
                 <span className="pl-3 block leading-[0.85] tracking-[-0.04em] font-extrabold">
                   Desarrollando soluciones
                   <span className="text-green-400"> escalables </span>
@@ -55,7 +55,7 @@ const Hero = () => {
 
           {/* COLUMNA IMAGEN */}
           <div className="absoluteflex justify-center lg:justify-end lg:col-span-1">
-            <div className="max-w-s md:max-w-md scale-125 md:scale-140 lg:scale-110 xl:scale-125 xl:origin-bottom rounded-2xl overflow-hidden transition-transform duration-500 min-h-50">
+            <div className="max-w-s md:max-w-md scale-125 md:scale-140 lg:scale-150 xl:scale-125 xl:origin-bottom rounded-2xl overflow-hidden transition-transform duration-500 min-h-50">
               <Image
                 src="/foto-perfil.png"
                 alt="Ing. Cesar Pausin"

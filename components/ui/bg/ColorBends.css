@@ -1,8 +1,8 @@
 .color-bends-container {
   position: absolute;
   overflow: hidden;
-  width: 120vw;
-  height: 120vh;
+  width: 150vw;
+  height: 150vh;
   top: 0;
   left: 0;
 }

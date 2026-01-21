@@ -1,5 +1,5 @@
 import Link from "next/link"
-import NavItem from "@/components/ui/NavItem"
+import NavItem from "@/components/ui/personalized/NavItem"
 
 const Navbar = () => {
 
