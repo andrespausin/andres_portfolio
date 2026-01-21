@@ -1,8 +1,8 @@
 
 
 import { techStack } from "@/lib/skills"
-import StackCard from "../ui/personalized/StackCard";
-import Heading from "../ui/personalized/Heading";
+import StackCard from "./components/StackCard";
+import Heading from "../../shared/components/ui/Heading";
 
 const StackSection = () => {
   return (

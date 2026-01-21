@@ -4,7 +4,7 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
-} from "@/components/ui/card"
+} from "@/shared/components/ui/card"
 import { Stack } from "@/lib/skills"
 import clsx from "clsx"
 

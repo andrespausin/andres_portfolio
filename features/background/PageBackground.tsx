@@ -1,6 +1,6 @@
 // components/layout/PageBackground.tsx
 "use client";
-import ColorBends from "@/components/ui/bg/ColorBends";
+import ColorBends from "./components/ColorBends";
 
 // Paleta de colores escogida por Andrea
 const paletaAndrea = ["#5227FF", "#7cff67", "#016e8f", "#0042a9", "#00018f"]

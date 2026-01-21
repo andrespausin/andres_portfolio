@@ -35,7 +35,7 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts",
-    "components/ui/bg/ColorBends.jsx"
+    "shared/components/ui/bg/ColorBends.jsx"
   ],
   "exclude": [
     "node_modules"

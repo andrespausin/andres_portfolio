@@ -1,8 +1,8 @@
 import { projects } from "@/lib/projects";
-import Hero from "@/components/layout/Hero";
-import StackSection from "@/components/layout/StackSection";
-import PageBackground from "@/components/layout/PageBackground";
-import Navbar from "@/components/layout/Navbar";
+import Hero from "@/features/hero/Hero";
+import StackSection from "@/features/stack_skills/StackSection";
+import PageBackground from "@/features/background/PageBackground";
+import Navbar from "@/features/navbar/Navbar";
 StackSection
 
 export default function Home() {

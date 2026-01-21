@@ -1,11 +1,11 @@
 "use client"
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import SectionContainer from "../ui/personalized/SectionContainer";
-import Heading from "../ui/personalized/Heading";
+import SectionContainer from "@/shared/components/ui/SectionContainer";
+import Heading from "@/shared/components/ui/Heading";
 import Image from "next/image";
-import Subheading from "../ui/personalized/Subheading";
-import NavItem from "../ui/personalized/NavItem";
+import Subheading from "@/shared/components/ui/Subheading";
+import NavItem from "@/features/navbar/components/NavItem";
 import Link from "next/link";
 
 const Hero = () => {
