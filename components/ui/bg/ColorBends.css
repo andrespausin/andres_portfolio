@@ -1,17 +1,19 @@
-/* .color-bends-container {
-  position: relative;
-  width: 120v;
-  height: 100%;
-  overflow: hidden;
-} */
-
 .color-bends-container {
-  width: 120vw !important;
-  /* 120% viewport width */
-  height: 120vh !important;
-  /* 120% viewport height */
-  left: -10vw !important;
-  /* Center it */
-  top: -10vh !important;
   position: absolute;
+  overflow: hidden;
+  width: 120vw;
+  height: 120vh;
+  top: 0;
+  left: 0;
+}
+
+/* MOBILE: aplicar oversize con vmax */
+@media (max-width: 768px) {
+  .color-bends-container {
+    width: 200vmax;
+    height: 400vmax;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

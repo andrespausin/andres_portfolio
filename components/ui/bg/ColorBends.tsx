@@ -297,14 +297,7 @@ export default function ColorBends({
     <div
       ref={containerRef}
       className={`color-bends-container ${className}`}
-      style={{
-        ...style,
-        width: '140vw',
-        height: '140vh',
-        left: '-20vw',
-        top: '-20vh',
-        position: 'absolute'
-      }}
+      style={style}
     />
   );
 }
