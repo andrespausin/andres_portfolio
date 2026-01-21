@@ -5,7 +5,7 @@ import SectionContainer from "@/shared/components/ui/SectionContainer";
 import Heading from "@/shared/components/ui/Heading";
 import Image from "next/image";
 import Subheading from "@/shared/components/ui/Subheading";
-import NavItem from "@/features/navbar/components/NavItem";
+import NavItem from "@/sections/navbar/components/NavItem";
 import Link from "next/link";
 
 const Hero = () => {

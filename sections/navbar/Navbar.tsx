@@ -1,5 +1,5 @@
 import Link from "next/link"
-import NavItem from "@/features/navbar/components/NavItem"
+import NavItem from "@/sections/navbar/components/NavItem"
 
 const Navbar = () => {
 
