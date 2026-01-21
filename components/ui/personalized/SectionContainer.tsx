@@ -18,7 +18,7 @@ const SectionContainer = forwardRef<HTMLElement, SectionContainerProps>(
       >
         <div className="sticky top-0 h-screen overflow-visible lg:overflow-hidden">
           {/* Background */}
-          <div className="fixed inset-0 z-0 pointer-events-none">
+          <div className="fixed inset-0 z-0 pointer-events-none w-full h-full">
             <ColorBends mouseInfluence={0} />
           </div>
 

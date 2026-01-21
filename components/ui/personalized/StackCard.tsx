@@ -68,7 +68,7 @@ const StackCard = ({ stack }: StackCardProps) => {
             hasIcons
               ? stack.colSpan === 2 || stack.colSpan === 3
                 ? "grid grid-cols-4 gap-6"
-                : "grid grid-cols-2 gap-6"
+                : "grid grid-cols-4 gap-6 md:grid-cols-2"
               : "flex flex-col md:grid md:grid-cols-3 gap-4"
 
           )}
@@ -112,6 +112,7 @@ const StackCard = ({ stack }: StackCardProps) => {
               <li
                 key={habilidad}
                 className="
+                  w-fit
                   rounded-2xl
                   inline-flex items-center gap-2
                   md:rounded-full border border-neutral-800 bg-neutral-900/60
