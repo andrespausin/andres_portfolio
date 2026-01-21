@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <PageBackground />
-      <div className="relative z-10">
+      <div className="relative z-10 px-10">
         <Navbar />
         <Hero />
         <StackSection />
