@@ -59,7 +59,8 @@ export const techStack = [
       { name: "Next.js", icon: "devicon-nextjs-plain" },
       { name: "Angular", icon: "devicon-angularjs-plain colored" },
       { name: "React Native", icon: "devicon-react-original colored" },
-      { name: "Filament", icon: "devicon-filamentphp-original" }
+      { name: "Filament", icon: "devicon-filamentphp-original" },
+      { name: "Svelte", icon: "devicon-svelte-plain colored" }
     ]
   },
   {
