@@ -18,13 +18,13 @@ const Navbar = () => {
 
           <div className="hidden lg:flex space-x-8 font-space-grotesk text-white">
             <NavItem>
-              <Link href={'/about'}>Sobre mi</Link>
+              <a href={'#about'}>Sobre mi</a>
             </NavItem>
             <NavItem>
-              <Link href={'/projects'}>Proyectos</Link>
+              <a href={'#trayectoria'}>Trayectoria</a>
             </NavItem>
             <NavItem>
-              <Link href={'/about'}>Contacto</Link>
+              <a href={'#contacto'}>Contacto</a>
             </NavItem>
           </div>
 
