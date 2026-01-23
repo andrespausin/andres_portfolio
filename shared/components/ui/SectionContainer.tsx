@@ -13,7 +13,7 @@ const SectionContainer = forwardRef<HTMLElement, SectionContainerProps>(
     return (
       <section
         ref={ref}
-        className="relative min-h-[120dvh] lg:min-h-[250vh] bg-transparent"
+        className="relative min-h-[120dvh] lg:min-h-[250vh] lg:h-auto "
       >
         <div className="sticky top-0 h-screen overflow-visible lg:overflow-hidden">
           <div className="relative z-10 w-full h-full flex items-center justify-center">
