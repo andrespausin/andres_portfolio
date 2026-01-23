@@ -1,8 +1,8 @@
-import { projects } from "@/lib/projects";
-import Hero from "@/sections/hero/Hero";
-import StackSection from "@/sections/stack_skills/StackSection";
 import PageBackground from "@/sections/background/PageBackground";
 import Navbar from "@/sections/navbar/Navbar";
+import Hero from "@/sections/hero/Hero";
+import StackSection from "@/sections/stack_skills/StackSection";
+import ProjectsSection from "@/sections/projects/Projects";
 StackSection
 
 export default function Home() {
@@ -13,6 +13,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <StackSection />
+        <ProjectsSection />
       </div>
     </>
   );
