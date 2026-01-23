@@ -38,10 +38,17 @@ const Hero = () => {
                   <span className="text-green-400"> eficientes</span>
                 </span>
               </p>
-              <div className="font-space-grotesk w-fit mt-4 px-4">
-                <Link href="/projects">
-                  <NavItem>Ver Proyectos</NavItem>
-                </Link>
+              <div className="flex flex-row">
+                {/* <div className="font-space-grotesk w-fit mt-4 px-4">
+                  <Link href="/projects">
+                    <NavItem>Ver Proyectos</NavItem>
+                  </Link>
+                </div> */}
+                <div className="font-space-grotesk w-fit mt-4 px-4">
+                  <a href="/CV-Cesar-Pausin-2026.pdf" download="CV-Cesar-Pausin-2026.pdf">
+                    <NavItem>Descargar CV</NavItem>
+                  </a>
+                </div>
               </div>
             </motion.div>
             <motion.div
