@@ -3,6 +3,7 @@ import Navbar from "@/sections/navbar/Navbar";
 import Hero from "@/sections/hero/Hero";
 import StackSection from "@/sections/stack_skills/StackSection";
 import ProjectsSection from "@/sections/projects/Projects";
+import ContactSection from "@/sections/contact/Contact";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <StackSection />
         <ProjectsSection />
+        <ContactSection />
       </div>
     </>
   );
