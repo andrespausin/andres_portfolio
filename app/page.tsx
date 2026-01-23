@@ -3,7 +3,6 @@ import Navbar from "@/sections/navbar/Navbar";
 import Hero from "@/sections/hero/Hero";
 import StackSection from "@/sections/stack_skills/StackSection";
 import ProjectsSection from "@/sections/projects/Projects";
-StackSection
 
 export default function Home() {
   return (

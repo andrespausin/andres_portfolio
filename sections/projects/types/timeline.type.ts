@@ -1,6 +1,6 @@
 import { IconType } from "react-icons";
 
-interface TimelineItem {
+export interface TimelineItem {
   date: string;
   title: string;
   company: string;
