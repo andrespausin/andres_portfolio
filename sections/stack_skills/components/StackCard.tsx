@@ -115,10 +115,8 @@ const StackCard = ({ stack }: StackCardProps) => {
                   w-fit
                   rounded-2xl
                   inline-flex items-center gap-2
-                  md:rounded-full border border-neutral-800 bg-neutral-900/60
                   px-3 py-1 text-xs text-neutral-300
                   transition-all duration-150
-                  hover:border-green-400/50
                 "
               >
                 <span className="h-1.5 w-1.5 rounded-full bg-green-400/70" />
