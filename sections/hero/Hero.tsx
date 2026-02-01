@@ -45,7 +45,7 @@ const Hero = () => {
                   </Link>
                 </div> */}
                 <div className="font-space-grotesk w-fit mt-4 px-4">
-                  <a href="/CV-Cesar-Pausin-2026.pdf" download="CV-Cesar-Pausin-2026.pdf">
+                  <a href="/Cesar_Pausin_Fullstack_Developer_2026.pdf" download="CV-Cesar-Pausin-2026.pdf">
                     <NavItem>Descargar CV</NavItem>
                   </a>
                 </div>
