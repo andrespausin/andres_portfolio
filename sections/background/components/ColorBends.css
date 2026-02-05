@@ -1,19 +1,7 @@
 .color-bends-container {
   position: absolute;
-  overflow: hidden;
-  width: 180vw;
-  height: 180vh;
   top: 0;
   left: 0;
-}
-
-/* MOBILE: aplicar oversize con vmax */
-@media (max-width: 768px) {
-  .color-bends-container {
-    width: 200vmax;
-    height: 400vmax;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  width: 100dvw;
+  height: 100dvh;
 }

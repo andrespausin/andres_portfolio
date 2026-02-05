@@ -40,8 +40,9 @@ export default function RootLayout({
     <html lang="en" className={`${instrumentSerif.variable} ${syne.variable} ${spaceGrotesk.variable} ${robotoSans.variable} ${inter.variable}`}>
       <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className="bg-[#0A0A0A] min-h-screen flex flex-col">
+      <body className="bg-[#0A0A0A] min-h-screen flex flex-col overflow-x-hidden">
         {children}
       </body>
     </html>
