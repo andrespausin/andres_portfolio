@@ -26,21 +26,19 @@ const Navbar = () => {
     // Aseguramos que el nav no pueda desbordar el ancho
     <nav className="fixed top-0 w-full left-0 z-50 overflow-x-hidden">
       <div className={`relative z-100 w-full transition-colors duration-300  xl:${isOpen ? 'bg-black' : 'bg-transparent backdrop-blur-xl'}`}>
-        <div className="mx-auto px-6 lg:px-12 max-w-7xl flex justify-between items-center py-5">
+        <div className="mx-auto px-6 lg:px-12 max-w-7xl flex justify-between items-center py-3">
 
           <Link href="/" onClick={() => setIsOpen(false)}>
             <div className="flex flex-col items-start">
-              <div className="font-bold text-xl font-syne text-gray-300 leading-none">
+              <div className="font-bold text-md xl:text-xl font-syne text-gray-300 leading-none">
                 PORTAFOLIO
               </div>
             </div>
           </Link>
-
-          {/* Escritorio */}
-          <div className="hidden xl:flex space-x-10 font-space-grotesk text-white">
+          <div className="hidden xl:flex space-x-10 font-syne text-white">
             {Items.map((item) => (
               <NavItem key={item.id}>
-                <a href={item.reference} className="hover:text-green-400 transition-colors">
+                <a href={item.reference} className="">
                   {item.content}
                 </a>
               </NavItem>
