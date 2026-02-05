@@ -7,13 +7,11 @@ const VerticalTimeline = () => {
   const [isOpen, setIsOpen] = useState<number | null>(null);
 
   return (
-    <section id="trayectoria" className="py-20 px-4 min-h-screen">
+    <section id="trayectoria" className="px-4 min-h-screen">
       <div className="max-w-7xl mx-auto relative">
-
-        {/* LÍNEA CENTRAL */}
         <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-green-500 hidden md:block" />
 
-        <div className="space-y-24"> {/* Aumenté el espacio para que no se amontonen */}
+        <div className="space-y-24">
           {timelineData.map((item, index) => {
             const isLeft = index % 2 === 0;
             return (
@@ -22,7 +20,6 @@ const VerticalTimeline = () => {
                 className={`relative flex items-center justify-between w-full mb-8 ${isLeft ? "md:flex-row" : "md:flex-row-reverse"
                   }`}
               >
-                {/* 1. TARJETA DE CONTENIDO */}
                 <motion.div
                   initial={{ opacity: 0, x: isLeft ? -100 : 100 }}
                   whileInView={{ opacity: 1, x: 0 }}

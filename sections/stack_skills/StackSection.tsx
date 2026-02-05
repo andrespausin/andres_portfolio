@@ -1,27 +1,28 @@
-
-
-import { techStack } from "@/lib/skills"
+import { techStack } from "@/lib/skills";
 import StackCard from "./components/StackCard";
-import Heading from "../../shared/components/ui/Heading";
+
 
 const StackSection = () => {
   return (
-    <div className=" bg-transparent max-w-7xl mx-auto px-4 lg:pt-16  mt-180 lg:mt-0">
-      <div className="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col flex-start">
-        <div className="flex flex-row w-fit gap-4 whitespace-nowrap text-[clamp(3rem,20vw,4rem)] md:text-[clamp(5rem,20vw,6rem)] lg:text-[clamp(5rem,14vw,6rem)] xl:text-[clamp(4.5rem,14vw,5rem)]">
-          <Heading content="SKILLSET" className="text-green-400" />
-          <Heading content="PROFESIONAL" className="text-white" />
-        </div>
-        <h2 className="font-extrabold font-space-grotesk tracking-[-0.04em] text-white xl:text-4xl">Stack tecnológico y competencias profesionales</h2>
-        <div className="flex flex-col mt-10 md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 grid-flow-dense auto-rows-[minmax(180px,auto)]">
-          {techStack.map((stack) => (
-            <StackCard key={stack.id} stack={stack} />
-          ))}
-        </div>
+    <div id="skillset" className="w-full max-w-7xl mx-auto px-6 py-20 lg:py-24 flex flex-col justify-center">
+      <div className="flex flex-col items-center xl:items-baseline gap-x-6 gap-y-0 mb-4 max-w-full justify-center">
+        <h1 className="text-green-400 font-white font-extrabold text-3xl md:text-6xl lg:text-7xl tracking-tighter leading-none break-all uppercase">
+          Skillset <span className="text-white">Profesional</span>
+        </h1>
+        <h2 className="font-space-grotesk font-bold text-white text-md justify-center text-center md:text-2xl lg:text-3xl max-w-3xl leading-snug mb-10 md:mb-14">
+          Stack tecnológico
+        </h2>
       </div>
-    </div>
+      <div className="w-full max-w-full flex flex-col xl:gap-20">
+        {techStack.map((stack) => (
+          <div key={stack.id} className="h-full min-w-0">
+            <StackCard stack={stack} />
+          </div>
+        ))}
+      </div>
 
-  )
-}
+    </div>
+  );
+};
 
 export default StackSection;
