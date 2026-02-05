@@ -41,7 +41,7 @@ const Hero = () => {
               >
                 FULLSTACK ENGINEER
               </h2>
-              <p className="font-space-grotesk font-extrabold text-white tracking-tighter text-lg sm:text-xl md:text-2xl lg:text-3xl mt-6 max-w-lg lg:max-w-none leading-tight">
+              <p className="font-inter font-extrabold text-white tracking-tighter text-lg sm:text-xl md:text-2xl lg:text-3xl mt-6 max-w-lg lg:max-w-none leading-tight">
                 <span className="block -mt-5 lg:mt-0">
                   Desarrollando soluciones
                   <span className="text-green-400"> escalables </span> y <span className="text-green-400"> eficientes</span>
