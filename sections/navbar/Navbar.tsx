@@ -5,10 +5,10 @@ import { Menu, X } from "lucide-react"
 import NavItem from "@/sections/navbar/components/NavItem"
 
 const Items = [
-  { id: 1, content: "Sobre nosotros", reference: "#about" },
-  { id: 2, content: "Servicios", reference: "#services" },
-  { id: 4, content: "Proyectos", reference: "#projects" },
-  { id: 3, content: "Contáctanos", reference: "#contact_us" },
+  { id: 1, content: "Sobre mí", reference: "#about" },
+  { id: 2, content: "Herramientas", reference: "#skillset" },
+  { id: 4, content: "Trayectoria", reference: "#trayectoria" },
+  { id: 3, content: "Contáctame", reference: "#contacto" },
 ]
 
 const Navbar = () => {

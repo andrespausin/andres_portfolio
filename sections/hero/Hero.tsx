@@ -24,7 +24,7 @@ const Hero = () => {
 
   return (
     <SectionContainer ref={ref} className="relative h-[200vh]">
-      <div className="sticky top-0 h-dvh w-full overflow-hidden flex flex-col justify-center">
+      <div id="about" className="sticky top-0 h-dvh w-full overflow-hidden flex flex-col justify-center">
         <div className="w-full max-w-7xl mx-auto px-6 h-full grid grid-cols-1 xl:grid-cols-12 items-center pb-20 xl:pb-0">
           <div className="relative xl:col-span-7 h-full flex flex-col justify-start xl:justify-center order-2 xl:order-1 xl:pb-24">
             <motion.div

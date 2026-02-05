@@ -11,7 +11,7 @@ const StackCard = ({ stack }: StackCardProps) => {
   return (
     <div className={`w-full flex flex-col ${isRightAligned ? 'xl:items-end' : 'xl:items-start'} group py-6 border-b  border-white/5 xl:border-none`}>
       <div className={`flex flex-col xl:items-center gap-4 md:gap-8 ${isRightAligned ? 'xl:flex-row-reverse' : 'xl:flex-row'}`}>
-        <h1 className="text-4xl md:text-6xl xl:text-8xl font-black uppercase text-white transition-colors duration-300 group-hover:text-green-400">
+        <h1 className="text-4xl md:text-6xl xl:text-8xl font-black uppercase text-center xl:text-start text-white transition-colors duration-300 group-hover:text-green-400">
           {stack.categoria}
         </h1>
         <section className={`
