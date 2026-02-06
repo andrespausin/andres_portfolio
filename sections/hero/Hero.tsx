@@ -48,7 +48,9 @@ const Hero = () => {
                 </span>
               </p>
               <div className="mt-8">
-                <a href="/cv.pdf" className="inline-block hover:scale-105 transition-transform duration-300 text-white">
+                <a href="/Cesar_Pausin_Fullstack_Developer_2026.pdf"
+                  target="blank"
+                  className="inline-block hover:scale-105 transition-transform duration-300 text-white">
                   <NavItem>Descargar CV</NavItem>
                 </a>
               </div>
