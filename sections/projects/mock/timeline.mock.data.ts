@@ -32,7 +32,7 @@ export const timelineData: TimelineItem[] = [
       "Gestioné la infraestructura de redes complejas (VLANs, QoS, VPNs) integrando routers, switches y sistemas de telefonía IP empresarial.",
       "Automaticé flujos de trabajo mediante scripts en Python y entornos de prueba en Postman, agilizando la integración de sistemas VoIP con CRMs externos.",
       "Lideré el análisis forense de tráfico de red con Wireshark para identificar cuellos de botella y resolver vulnerabilidades de seguridad en el protocolo SIP.",
-      "Actué como instructor certificado, capacitando a más de 200 ingenieros en LATAM sobre soluciones de Comunicaciones Unificadas y Networking avanzado.",
+      "Actué como instructor certificado, capacitando a más de 200 ingenieros en LATAM (México, Panamá, Costa Rica, El Salvador y Ecuador) sobre soluciones de Comunicaciones Unificadas y Networking avanzado.",
       "Desarrollé dashboards de análisis de datos para monitorizar la calidad de servicio (QoS) y el rendimiento de tráfico de voz sobre IP."
     ],
     icon: FaNetworkWired,

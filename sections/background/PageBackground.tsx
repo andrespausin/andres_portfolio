@@ -1,12 +1,14 @@
 "use client";
-import ColorBends from "./components/ColorBends";
-// Importamos hook para detectar si es móvil (opcional, o simplemente lo ponemos en 0 siempre)
-// Pero para una solución rápida, ajusta los props directamente.
+import dynamic from 'next/dynamic';
+
+const ColorBends = dynamic(() => import("./components/ColorBends"), {
+  ssr: false,
+  loading: () => <div className="fixed inset-0 bg-black -z-50" />,
+});
 
 const PageBackground = () => (
-  // CAMBIO 1: h-[100lvh] en lugar de h-full. 
-  // Esto fija la altura al tamaño máximo posible, ignorando si la barra de URL entra o sale.
-  <div className="fixed inset-0 -z-50 w-full h-[100lvh] bg-black overflow-hidden pointer-events-none transform-gpu translate-z-0">
+
+  <div className="fixed inset-0 -z-50 w-full h-lvh bg-black overflow-hidden pointer-events-none transform-gpu translate-z-0">
     <ColorBends
       opacity={0.5}
       rotation={45}

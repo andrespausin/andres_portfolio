@@ -10,24 +10,28 @@ const robotoSans = Roboto({
 const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument-serif",
   subsets: ["latin"],
+  display: "swap",
   weight: "400"
 })
 
 const syne = Syne({
   variable: "--font-syne",
   subsets: ["latin"],
+  display: "swap",
   weight: ["400", "700"]
 })
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
+  display: "swap",
   weight: "400"
 })
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
   weight: "400"
 })
 
