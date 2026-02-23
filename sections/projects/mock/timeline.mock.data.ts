@@ -3,69 +3,75 @@ import {
   FaNetworkWired,
   FaCode,
   FaLaptopCode,
-  FaMobileAlt
+  FaMobileAlt,
+  FaBaseballBall,
+  FaIndustry,
+  FaRocket
 } from "react-icons/fa";
 
 export const timelineData: TimelineItem[] = [
   {
-    date: "Sep 2025 - Ene 2026",
-    title: "Frontend Developer",
-    company: "Aplicación Mobile (Proyecto Personal)",
-    summary:
-      "Desarrollo integral de una solución móvil híbrida de alto rendimiento, centrada en la optimización de recursos y una experiencia de usuario nativa.",
+    date: "Ene. 2026 - Feb. 2026",
+    title: "Fullstack Engineer (Freelance)",
+    company: "Proyectos Independientes",
+    summary: "Desarrollo de aplicaciones web interactivas de alto rendimiento (SPA) y gestión del ciclo de vida del software de principio a fin.",
     achievements: [
-      "Diseñé una interfaz móvil de alto impacto utilizando Angular e Ionic, implementando Lazy Loading para reducir los tiempos de carga en un 30%.",
-      "Robustecí la seguridad mediante la implementación de autenticación JWT y sistemas de notificaciones push personalizadas con Firebase.",
-      "Consumí y optimicé APIs REST desarrolladas en Node.js, garantizando la sincronización de datos en tiempo real mediante WebSockets.",
-      "Arquitecturé el sistema bajo una estructura modular de componentes, facilitando el mantenimiento y la escalabilidad de la aplicación."
+      "Desarrollo de SPA (Single Page Application): Construí aplicaciones web interactivas utilizando React/Next.js enfocadas en una experiencia de usuario fluida y sin recargas.",
+      "Apliqué técnicas de code-splitting y lazy loading para optimizar el peso de la aplicación, alcanzando una reducción del 25% en los tiempos de carga inicial en el cliente.",
+      "Ciclo de Vida y Despliegue: Gestioné el desarrollo End-to-End, asegurando una transición ágil desde el entorno local hasta su despliegue en producción, garantizando estabilidad y escalabilidad."
     ],
-    icon: FaMobileAlt,
-    logo: "/logos/personal-project.png"
+    icon: FaLaptopCode,
+    logo: "/logos/freelance-project.png"
   },
   {
-    date: "Feb 2024 - Sep 2025",
-    title: "Ingeniero de Soporte",
-    company: "Grandstream Networks LATAM",
-    summary:
-      "Especialista en infraestructura de redes y telecomunicaciones, liderando la resolución de incidentes críticos y la capacitación técnica a nivel regional.",
+    date: "Ago. 2025 - Actualidad",
+    title: "Fullstack Engineer (Founding Team)",
+    company: "Proyecto en Fase Pre-Seed (Stealth Mode)",
+    summary: "Construcción integral de un MVP desde cero, definiendo la arquitectura técnica central y configurando la infraestructura de despliegue moderna.",
     achievements: [
-      "Gestioné la infraestructura de redes complejas (VLANs, QoS, VPNs) integrando routers, switches y sistemas de telefonía IP empresarial.",
-      "Automaticé flujos de trabajo mediante scripts en Python y entornos de prueba en Postman, agilizando la integración de sistemas VoIP con CRMs externos.",
-      "Lideré el análisis forense de tráfico de red con Wireshark para identificar cuellos de botella y resolver vulnerabilidades de seguridad en el protocolo SIP.",
-      "Actué como instructor certificado, capacitando a más de 200 ingenieros en LATAM (México, Panamá, Costa Rica, El Salvador y Ecuador) sobre soluciones de Comunicaciones Unificadas y Networking avanzado.",
-      "Desarrollé dashboards de análisis de datos para monitorizar la calidad de servicio (QoS) y el rendimiento de tráfico de voz sobre IP."
+      "Diseño y Desarrollo del MVP: Responsable de la construcción del producto desde cero, participando en la definición de la arquitectura técnica (React Native, NestJS, PostgreSQL) junto a los fundadores.",
+      "Preparación de Infraestructura: Diseño y configuración del entorno de despliegue (Docker Compose, Vercel, Railway), dejando preparada la base para CI/CD y futuras iteraciones rápidas.",
+      "Arquitectura y Calidad de Código: Implementación de principios de Clean Architecture y buenas prácticas para asegurar mantenibilidad y escalabilidad desde etapas tempranas."
+    ],
+    icon: FaRocket,
+    logo: "/logos/stealth-startup.png"
+  },
+  {
+    date: "Feb. 2024 - Sep. 2025",
+    title: "Technical Support Engineer",
+    company: "Grandstream Networks",
+    summary: "Diagnóstico avanzado de redes, resolución de incidencias L3 y capacitación técnica oficial a nivel regional para LATAM.",
+    achievements: [
+      "Resolución de Incidencias Críticas (L3): Diagnóstico avanzado de fallos en redes y VoIP mediante análisis de paquetes (Wireshark) y logs, colaborando directamente con Ingeniería para la corrección de bugs de software.",
+      "Regional Technical Enablement (LATAM): Impartí certificaciones oficiales en múltiples países como instructor técnico, capacitando a ingenieros sobre arquitecturas de red complejas.",
+      "Perfeccioné mi capacidad para traducir conceptos técnicos y adaptarlos a distintos niveles de interlocutores, mejorando la comunicación entre soporte y desarrollo."
     ],
     icon: FaNetworkWired,
     logo: "/logos/grandstream.png"
   },
   {
-    date: "Ago 2023 - Abr 2024",
-    title: "Full Stack Developer",
+    date: "Ago. 2023 - Abr. 2024",
+    title: "Fullstack Developer",
     company: "Bob Abreu Baseball Academy",
-    summary:
-      "Digitalización y automatización de procesos para una academia de alto rendimiento, integrando análisis predictivo para la toma de decisiones.",
+    summary: "Desarrollo de plataformas internas para la digitalización de gestión deportiva e implementación de modelos predictivos de aprendizaje automático.",
     achievements: [
-      "Lideré el desarrollo Full Stack (React/Node.js) de una plataforma centralizada que redujo el uso de papel y errores manuales en un 80%.",
-      "Modelé y optimicé esquemas de bases de datos en MySQL para gestionar perfiles biométricos, estadísticas de juego e historias clínicas de atletas.",
-      "Colaboré en la integración de algoritmos de Machine Learning para predecir el potencial de crecimiento y rendimiento de prospectos deportivos.",
-      "Implementé un panel administrativo con visualización de datos dinámica (Charts.js/Recharts) para el seguimiento en tiempo real del progreso físico."
+      "Automatización Administrativa: Desarrollé una plataforma interna que redujo la carga operativa manual en un 30%, digitalizando los procesos de gestión deportiva de la academia.",
+      "Modelado Predictivo: Implementación de un modelo de aprendizaje automático con TensorFlow para predecir el rendimiento de los atletas.",
+      "Desarrollé el flujo completo de datos, incluyendo la extracción de métricas deportivas, preprocesamiento de datos y validación del modelo de IA."
     ],
-    icon: FaLaptopCode,
-    logo: "/logos/bob-abreu-academy.png"
+    icon: FaBaseballBall,
+    logo: "/logos/baseball-academy.png"
   },
   {
-    date: "Oct 2023 - Dic 2023",
-    title: "Full Stack Developer",
-    company: "Servicio de Inventario de Autolavado C.A.",
-    summary:
-      "Creación de una herramienta de gestión contable y operativa para la optimización de inventarios y flujo de caja.",
+    date: "Oct. 2023 - Dic. 2023",
+    title: "Fullstack Developer (Contract / Proyecto Cerrado)",
+    company: "Multiservicios Industriales Carabobo, C.A.",
+    summary: "Creación de un sistema ERP a medida para la optimización y digitalización del control de inventarios y procesos de facturación.",
     achievements: [
-      "Construí una SPA (Single Page Application) intuitiva con React.js, permitiendo una gestión de inventario fluida desde cualquier dispositivo.",
-      "Desarrollé un motor de búsqueda y filtrado avanzado en el backend con Express.js, mejorando la velocidad de auditoría de stock.",
-      "Diseñé reportes contables automatizados que facilitaron el cierre de caja diario y el control de mermas de productos químicos.",
-      "Configuré y desplegué el entorno de servidor local asegurando la integridad de los datos financieros mediante backups programados."
+      "Digitalización de Procesos: Construcción y entrega exitosa en un plazo de 3 meses de un sistema ERP completamente a medida.",
+      "Eliminación de procesos manuales de control de inventarios y facturación mediante la implementación de una arquitectura robusta usando React, Express y bases de datos SQL."
     ],
-    icon: FaCode,
-    logo: "/logos/autolavado.png"
+    icon: FaIndustry,
+    logo: "/logos/multiservicios.png"
   }
-];
+]
